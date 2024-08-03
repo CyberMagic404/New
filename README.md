@@ -1,4 +1,3 @@
----
 **MVC**
 В срезе визуальных контролов принимается, что:
 * моделью является или [абстрактная модель](https://wasaby.dev/doc/platform/models-collections-types/entity/#wsdataentitymodel) (для простых контролов), или [коллекция](https://wasaby.dev/doc/platform/models-collections-types/icollection/) (для контролов коллекций);
@@ -34,5 +33,4 @@
 		}
 	}
 ```
----
  
