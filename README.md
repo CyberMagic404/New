@@ -9,7 +9,6 @@
     * ___в случае абстрактной модели___ — меняет значения ее полей;
     * ___в случае коллекции___ — добавляет/удаляет/обновляет элементы коллекции;
 * представление получает от модели уведомления об изменении состояния и актуализирует внешний вид согласно изменениям.
-> [!Примечание]
 > **Примечание.** В настоящее время они умеют работать только с одним видом коллекций — [списком записей](https://wasaby.dev/doc/platform/models-collections-types/icollection/#wsdatacollectionrecordset).
 ##### Диаграмма компонентов для контрола коллекции
 ![Диаграмма компонентов для контрола коллекции](https://wasaby.dev/materials/resources/doc/images//documentation-platform/ws-data/concept-collection-control-component-diagram.png)
@@ -21,14 +20,14 @@
 ##### Пример
 Определим модель пользователя:
 ```javascript
-	export default class User extends Model {
-		_$format: [
+export default class User extends Model {
+	_$format: [
+	...
+	],
+	_$idProperty: 'login',
+	authenticate(password) {
 		...
-		],
-		_$idProperty: 'login',
-		authenticate(password) {
-			...
-		}
 	}
+}
 ```
  
